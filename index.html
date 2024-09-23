@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="title">
+    <h3>Simple Calculator App</h3>
+</div>
+<!-- CALCULATOR APP -->
+ <div class="Calculator">
+    <div><input title="displaybar" id="display" readonly></div>
+    <div class="keys">
+      <button onclick="ShowDisplay('**')">exp</button>
+      <button onclick="Backspace()">Del</button>
+      <button onclick="Percentage()">%</button>
+      <button class="operators"  onclick="ShowDisplay('/')">/</button>
+    </div>
+    <div class="keys">
+        <button onclick="ShowDisplay('7')">7</button>
+        <button onclick="ShowDisplay('8')">8</button>
+        <button onclick="ShowDisplay('9')">9</button>
+        <button class="operators"  onclick="ShowDisplay('*')">x</button>
+      </div>
+      <div class="keys">
+        <button onclick="ShowDisplay('4')">4</button>
+        <button onclick="ShowDisplay('5')">5</button>
+        <button onclick="ShowDisplay('6')">6</button>
+        <button class="operators" onclick="ShowDisplay('-')">-</button>
+      </div>
+      <div class="keys">
+        <button onclick="ShowDisplay('1')">1</button>
+        <button onclick="ShowDisplay('2')">2</button>
+        <button onclick="ShowDisplay('3')">3</button>
+        <button class="operators"  onclick="ShowDisplay('+')">+</button>
+      </div>
+      <div class="keys">
+        <button onclick="ClearDisplay()">C</button>
+        <button onclick="ShowDisplay('0')">0</button>
+        <button onclick="ShowDisplay('.')">.</button>
+        <button class="operators"  onclick="Calculate()">=</button>
+      </div>
+
+ </div>
+
+
+
+<script src="script.js"></script>    
+</body>
+</html>

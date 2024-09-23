@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: 'Poppins',sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    margin-top: 20px;
+}
+.Calculator{
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+.keys{
+    display: flex;
+    justify-content: space-between;
+    
+}
+button{
+    width: 55px;
+    padding: 10px;
+    margin: 5px;
+    background-color: grey;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 40px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+button:hover {
+    box-shadow: 0 0 10px #FFD700; /* Golden glow */
+}
+#display{
+    padding: 15px;
+    margin-bottom: 5px;
+    font-size: 17px;
+    font-weight: bolder;
+    width: 100%;
+    
+}
+.operators{
+    background-color: orange;
+}
